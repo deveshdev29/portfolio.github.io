@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
+            <h1>My Portfolio</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -25,49 +27,56 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm a passionate student with a focus on cybersecurity and programming. Here's my journey so far.</p>
+            <p>I'm a cybersecurity student and tech enthusiast, exploring the realms of programming, ethical hacking, and OSINT.</p>
         </div>
     </section>
 
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+          <h2>Projects</h2>
+          <div class="project-grid">
             <div class="project-card">
-                <h3>Pomodoro Timer</h3>
-                <p>A productivity app built using Bash scripting.</p>
+              <h3>Pomodoro Timer</h3>
+              <p>A Bash-based productivity tool for time management.</p>
             </div>
             <div class="project-card">
-                <h3>Steganography Tool</h3>
-                <p>An advanced steganography project for hiding information in images.</p>
+              <h3>Steganography Tool</h3>
+              <p>An advanced image steganography tool.</p>
             </div>
             <div class="project-card">
-                <h3>Network Scanner</h3>
-                <p>A Python-based network scanner to discover active devices and open ports in a local network.</p>
+              <h3>Network Scanner</h3>
+              <p>A Python tool to scan and analyze local networks.</p>
             </div>
             <div class="project-card">
-                <h3>Secure File Encryption</h3>
-                <p>An encryption tool built with Python that encrypts files using AES encryption for secure storage.</p>
+              <h3>File Encryption</h3>
+              <p>File encryption using AES for secure storage.</p>
             </div>
             <div class="project-card">
-                <h3>Web Vulnerability Scanner</h3>
-                <p>A tool built with Python and requests library to scan websites for common vulnerabilities such as SQL injection and XSS.</p>
+              <h3>Vulnerability Scanner</h3>
+              <p>A Python-based web vulnerability scanner.</p>
             </div>
+            <!-- New Project -->
+            <div class="project-card">
+              <h3>DNS Resolver</h3>
+              <p>A tool to resolve domain names and provide detailed DNS information.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li>Cybersecurity</li>
-                <li>OSINT (Open Source Intelligence)</li>
+                <li>OSINT</li>
                 <li>Ethical Hacking</li>
                 <li>Linux (Kali Linux, GNOME)</li>
-                <li>Programming (Bash, Python, C++)</li>
+                <li>Bash Scripting</li>
+                <li>Python</li>
                 <li>Network Security</li>
                 <li>Penetration Testing</li>
-                <li>Steganography</li>
-                <li>Encryption</li>
                 <li>Web Application Security</li>
             </ul>
         </div>
@@ -76,7 +85,7 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email me at <a href="mailto:your.email@example.com">deveshdev2909@gmail.com</a></p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         </div>
     </section>
 
@@ -87,4 +96,3 @@
     </footer>
 </body>
 </html>
-
