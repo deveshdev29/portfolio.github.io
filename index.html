@@ -1,97 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <section id="about" class="section">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a cybersecurity student and tech enthusiast, exploring the realms of programming, ethical hacking, and OSINT.</p>
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Devesh</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Certifications">Certifications</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#blog.html" class="nav-link"><span data-hover="Blog">Blog</span></a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Devesh</span>
+                                    <span class="animated-item">Ethical Hacker</span>
+                                    <span class="animated-item">Pen Tester</span>
+                                </div>
+                        </h1>
+
+                        <p>Passionate about safeguarding digital assets, I bring energy and expertise in identifying vulnerabilities, securing systems, and ensuring a robust cybersecurity posture. With a focus on ethical hacking and penetration testing, I strive to create secure and resilient digital environments.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a consultation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+      <div class="container">
+              
+              <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+
+                    <div class="col-lg-8 mx-auto">
+                      <h2>Certifications I have done During My Studies</h2>
+                    </div>
+                    <style>
+                      .owl-carousel .item img {
+                        border-radius: 15px; /* Adjust the value as per the curve you want */
+                      }
+                    </style>
+
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/certificates/certificate-img1.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/certificates/certificate-img2.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/certificates/certificate-img3.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/certificates/certificate-img4.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="images/certificates/certificate-img5.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+      </div>
+  </section>
+  
+  
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
         <div class="container">
-          <h2>Projects</h2>
-          <div class="project-grid">
-            <div class="project-card">
-              <h3>Pomodoro Timer</h3>
-              <p>A Bash-based productivity tool for time management.</p>
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Projects</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2025</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Vulnerability Scanner</span><small>View Project</small></h3>
+                                  <p>A comprehensive vulnerability scanner designed to identify security weaknesses in web applications and network systems. This tool provides detailed reports and recommendations for remediation.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2026</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Phishing Simulation</span><small>View Project</small></h3>
+                                <p>A tool to simulate phishing attacks for training purposes. It helps organizations test their employees' awareness and readiness against phishing scams. </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2027</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Pen-Testing Framework<small>View Project</small></h3>
+                                <p>A Framework that provides a structured approach to conducting penetration tests. It includes automated tools, scripts, and exploiting vulnerabilities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2028</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Network Intrusion System<small>View Project</small></h3>
+                                <p>A system designed to streamline the incident response process. It includes features for tracking incidents, managing responses, and generating detailed reports for analysis.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2027</span>
+                             </div>
+                             <div class="timeline-info">
+                              <h3><span>Bachelor of Technology</span><small>Computer Science</small></h3>
+                              <p>During my time pursuing a B.Tech in Computer Science, I have gained hands-on experience with coding, cybersecurity, and networking. It's been a challenging but rewarding journey, and I'm excited to apply these skills to real-world projects.</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2025</span>
+                            </div>
+                            <div class="timeline-info">
+                              <h3><span>Cybersecurity</span><small>Specialization</small></h3>
+                              <p>Through my Cybersecurity Specialization, I have developed critical skills in identifying threats, securing networks, and understanding the latest trends in digital security. This has provided me with practical knowledge to handle real-world security challenges.</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2022</span>
+                            </div>
+                            <div class="timeline-info">
+                              <h3><span>Psychology</span><small>Yale University</small></h3>
+                              <p>Studying Psychology at Yale University helped me develop a deeper understanding of human behavior, decision-making, and mental processes. This knowledge has strengthened my analytical skills, allowing me to approach challenges with a well-rounded perspective.</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                
             </div>
-            <div class="project-card">
-              <h3>Steganography Tool</h3>
-              <p>An advanced image steganography tool.</p>
-            </div>
-            <div class="project-card">
-              <h3>Network Scanner</h3>
-              <p>A Python tool to scan and analyze local networks.</p>
-            </div>
-            <div class="project-card">
-              <h3>File Encryption</h3>
-              <p>File encryption using AES for secure storage.</p>
-            </div>
-            <div class="project-card">
-              <h3>Vulnerability Scanner</h3>
-              <p>A Python-based web vulnerability scanner.</p>
-            </div>
-            <!-- New Project -->
-            <div class="project-card">
-              <h3>DNS Resolver</h3>
-              <p>A tool to resolve domain names and provide detailed DNS information.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.974380704426!2d77.57627409090553!3d28.450188670974487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cbf94deb6bc39%3A0x7ba6bedc9a2b537f!2sBennett%20University!5e0!3m2!1sen!2sin!4v1726756435316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p><a href="mailto:deveshdev2909@gmail.com">deveshdev2909@gmail.com</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="https://github.com/deveshdev29" class="fab fa-github fa-lg" data-toggle="tooltip" data-placement="left" title="Github"></a></li>
+                     <li><a href="https://instagram.com/devifyyy" class="fab fa-instagram fa-lg" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="https://www.linkedin.com/in/deveshdev29/" class="fab fa-linkedin fa-lg" data-toggle="tooltip" data-placement="left" title="Linkedin"></a></li>
+                </ul>
             </div>
           </div>
-        </div>
-      </section>
-      
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Cybersecurity</li>
-                <li>OSINT</li>
-                <li>Ethical Hacking</li>
-                <li>Linux (Kali Linux, GNOME)</li>
-                <li>Bash Scripting</li>
-                <li>Python</li>
-                <li>Network Security</li>
-                <li>Penetration Testing</li>
-                <li>Web Application Security</li>
-            </ul>
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">deveshdev2909@gmail.com</a></p>
-        </div>
-    </section>
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 My Portfolio</p>
-        </div>
-    </footer>
-</body>
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2024 dev. All rights reserved</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
 </html>
